@@ -2,7 +2,6 @@ def sh_1_1_17(a: int, b: int) -> (int, int):
     """
         Вычисление НОД и НОК алгоритмом Дейкстры
     """
-
     m = v = a
     n = u = b
 
@@ -19,6 +18,7 @@ def sh_1_1_17(a: int, b: int) -> (int, int):
 
     return m, u
 
+
 if __name__ == '__main__':
 
     import random
@@ -32,8 +32,6 @@ if __name__ == '__main__':
     print('Check', num_tests, 'examples...')
 
     for i in random_values:
-        assert (2* i[0] * i[1]) / sh_1_1_17(i[0], i[1])[0] == sh_1_1_17(i[0], i[1])[1]
+        assert (2 * i[0] * i[1]) / sh_1_1_17(i[0], i[1])[0] == sh_1_1_17(i[0], i[1])[1]
 
     print('Done!')
-
-

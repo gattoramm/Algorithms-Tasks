@@ -1,15 +1,13 @@
 def sh_1_1_12(n: int) -> float:
     """
-        Вычисление 1/0! + 1/1! +...+ 1/n! с количеством оперций порядка n.
+        Вычисление 1/0! + 1/1! +...+ 1/n! с количеством оперций порядка n
     """
-
-    sum_ = mp = 1.0
+    result = mp = 1.0
 
     for k in range(1, n + 1):
         mp *= k
-        sum_ += 1 / mp
-
-    return sum_
+        result += 1 / mp
+    return result
 
 
 if __name__ == '__main__':

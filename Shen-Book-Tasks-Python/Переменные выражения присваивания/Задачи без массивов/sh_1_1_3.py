@@ -1,8 +1,7 @@
 ﻿def sh_1_1_3(a: int, n: int) -> int:
     """
-        Вычисление a^n.
+        Вычисление a^n
     """
-
     k, b = 0, 1
 
     while k < n:

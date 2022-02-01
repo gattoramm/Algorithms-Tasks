@@ -1,8 +1,7 @@
 def sh_1_1_15(a: int, b: int) -> (int, int, int):
     """
-        Вычисление d=НОД(a,b) и целых x и y,что d=a·x+b·y.
+        Вычисление d=НОД(a,b) и целых x и y,что d=a·x+b·y
     """
-
     p, q = 1, 0
     r, s = 0, 1
     d = x = y = 0
@@ -31,7 +30,6 @@ def sh_1_1_15(a: int, b: int) -> (int, int, int):
 
 
 if __name__ == '__main__':
-
     import random
 
     num_tests = random.randrange(1, 1000, 1)

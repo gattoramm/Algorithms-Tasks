@@ -2,7 +2,6 @@ def sh_1_1_14(a: int, b: int) -> int:
     """
         Вычисление НОД(a,b) модифицированным вариантом алгоритма Евклида.
     """
-
     if a < b:
         a, b = b, a
 
@@ -10,12 +9,10 @@ def sh_1_1_14(a: int, b: int) -> int:
         a = a % b
         if a < b:
             a, b = b, a
-
     return b
 
 
 if __name__ == '__main__':
-
     import random
 
     num_tests = random.randrange(1, 1000, 1)

@@ -2,7 +2,6 @@ def sh_1_1_11(n: int) -> float:
     """
         Вычисление 1/0! + 1/1! +...+ 1/n!
     """
-
     sum_ = 1.0
 
     for out_k in range(1, n + 1):
@@ -10,7 +9,6 @@ def sh_1_1_11(n: int) -> float:
         for in_k in range(1, out_k + 1):
             mp *= in_k
         sum_ += 1 / mp
-
     return sum_
 
 

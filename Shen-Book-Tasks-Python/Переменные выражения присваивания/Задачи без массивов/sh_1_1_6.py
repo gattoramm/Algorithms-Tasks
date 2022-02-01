@@ -6,15 +6,14 @@ def sh_1_1_6(a: int, b: int) -> int:
         <переменная> := <число>,
         <переменная1> := <переменная2> + 1.
     """
-
     if a < b:
         a, b = b, a
 
-    sum_, k = a, 0
+    result, k = a, 0
     while k != b:
-        sum_ += 1
+        result += 1
         k += 1
-    return sum_
+    return result
 
 
 if __name__ == '__main__':

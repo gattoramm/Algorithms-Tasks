@@ -1,9 +1,8 @@
 def sh_1_1_16(a: int, b: int) -> (int, int, int):
     """
         Вычисление d=НОД(a,b) и целых x и y,что d=a·x+b·y,
-        используя алгоритм Евклида деления с остатком.
+        используя алгоритм Евклида деления с остатком
     """
-
     p, q = 1, 0
     r, s = 0, 1
 
@@ -26,7 +25,6 @@ def sh_1_1_16(a: int, b: int) -> (int, int, int):
 
 
 if __name__ == '__main__':
-
     import random
 
     num_tests = random.randrange(1, 1000, 1)

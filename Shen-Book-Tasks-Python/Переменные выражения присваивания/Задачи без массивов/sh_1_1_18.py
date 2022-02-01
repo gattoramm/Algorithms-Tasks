@@ -2,7 +2,6 @@ def sh_1_1_18(a: int, b: int) -> int :
     """
         Вычисление НОД по агоритму Евклида с числом действий log k
     """
-
     d = 1
 
     while not(a == 0 or b == 0):
@@ -26,7 +25,6 @@ def sh_1_1_18(a: int, b: int) -> int :
 
 
 if __name__ == '__main__':
-
     import random
 
     num_tests = random.randrange(1, 1000, 1)

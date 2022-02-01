@@ -4,16 +4,14 @@ def sh_1_1_7(a: int, d: int) -> (int, int):
         а (целое неотрицательное) на d (целое положительное),
         не используя операций div и mod.
     """
-
     r, q = a, 0
     while r >= d:
         r -= d
         q += 1
-
     return q, r
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     import random
 
     num_tests = random.randrange(1, 1000, 1)
@@ -25,6 +23,6 @@ if __name__ == '__main__':
     print('Check', num_tests, 'examples...')
 
     for i in random_values:
-        assert sh_1_1_7(i[0], i[1])  == (i[0] // i[1], i[0] % i[1])
+        assert sh_1_1_7(i[0], i[1]) == (i[0] // i[1], i[0] % i[1])
 
     print('Done!')

@@ -1,18 +1,15 @@
 def sh_1_1_13_1(a: int, b: int) -> int:
     """
-        Вычисление НОД(a,b).
+        Вычисление НОД(a,b)
     """
-
     nod = max(a, b)
 
     while not(a % nod == 0 and b % nod == 0):
         nod -= 1
-
     return nod
 
 
 if __name__ == '__main__':
-
     import random
 
     num_tests = random.randrange(1, 1000, 1)
