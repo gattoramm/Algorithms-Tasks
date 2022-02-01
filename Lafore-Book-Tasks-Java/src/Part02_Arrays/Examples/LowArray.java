@@ -1,7 +1,8 @@
 package Part02_Arrays.Examples;
 
-// Класс массива с низкоуровневым интерфейсом
-
+/**
+ * Класс массива с низкоуровневым интерфейсом
+ */
 class LowArray {
     private long[] a;
 
@@ -25,7 +26,7 @@ class LowArrayApp {
         int nElem = 0;
         int j;
 
-        // вставска элементов
+        // вставка элементов
         arr.setElem(0, 77);
         arr.setElem(1, 99);
         arr.setElem(2, 44);
@@ -38,30 +39,27 @@ class LowArrayApp {
         arr.setElem(9, 33);
         nElem = 10;
 
-        for(j=0; j<nElem; j++)
+        for (j=0; j<nElem; j++)
             System.out.print(arr.getElem(j) + " ");
         System.out.println("");
 
         // поиск элемента
         int searchKey = 26;
-        for(j=0; j<nElem; j++)
-            if(arr.getElem(j) == searchKey)
-                break;
-        if(j == nElem)
+        for (j=0; j<nElem; j++)
+            if (arr.getElem(j) == searchKey) break;
+        if (j == nElem)
             System.out.println("Can't find " + searchKey);
-        else
-            System.out.println("Found " + searchKey);
+        else System.out.println("Found " + searchKey);
 
         // удаление элемента
         System.out.println("Delete element with key = 55");
-        for(j=0; j<nElem; j++)
-            if(arr.getElem(j) == 55)
-                break;
-        for(int k=j; k<nElem; k++)
+        for (j=0; j<nElem; j++)
+            if (arr.getElem(j) == 55) break;
+        for (int k=j; k<nElem; k++)
             arr.setElem(k, arr.getElem(k+1));
         nElem--;
 
-        for(j=0; j<nElem; j++)
+        for (j=0; j<nElem; j++)
             System.out.print(arr.getElem(j) + " ");
         System.out.println("");
     }
