@@ -1,8 +1,9 @@
 package Part02_Arrays.Tasks.Task2_1;
 
-// Класс массива с высокоуровневым интерфейсом
-// Добавить метод, возвращающий наибольшее значение ключа или -1, если массив пуст
-
+/**
+ * Класс массива с высокоуровневым интерфейсом
+ * Добавить метод, возвращающий наибольшее значение ключа или -1, если массив пуст
+ */
 class HighArray {
     private long[] a;
     private int nElems;
@@ -14,10 +15,10 @@ class HighArray {
 
     public boolean find(long searchKey) {
         int j;
-        for(j=0; j<nElems; j++)
-            if(a[j] == searchKey)
+        for (j=0; j<nElems; j++)
+            if (a[j] == searchKey)
                 break;
-        if(j == nElems)
+        if (j == nElems)
             return false;
         else
             return true;
@@ -30,13 +31,13 @@ class HighArray {
 
     public boolean delete(long value) {
         int j;
-        for(j=0; j<nElems; j++)
+        for (j=0; j<nElems; j++)
             if(value == a[j])
                 break;
-        if(j == nElems)
+        if (j == nElems)
             return false;
         else {
-            for(int k=j; k<nElems; k++)
+            for (int k=j; k<nElems; k++)
                 a[k] = a[k+1];
             nElems--;
             return true;
@@ -44,7 +45,7 @@ class HighArray {
     }
 
     public void display() {
-        for(int j=0; j<nElems; j++)
+        for (int j=0; j<nElems; j++)
             System.out.print(a[j] + " ");
         System.out.println("");
     }
@@ -52,10 +53,9 @@ class HighArray {
     public long getMax() {
         long max = -1;
 
-        for(int j=0; j<nElems; j++)
-            if(a[j] > max)
+        for (int j=0; j<nElems; j++)
+            if (a[j] > max)
                 max = a[j];
-
         return max;
     }
 }
