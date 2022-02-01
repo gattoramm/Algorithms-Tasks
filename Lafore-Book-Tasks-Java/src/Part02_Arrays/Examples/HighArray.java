@@ -1,7 +1,8 @@
 package Part02_Arrays.Examples;
 
-// Класс массива с высокоуровневым интерфейсом
-
+/**
+ * Класс массива с высокоуровневым интерфейсом
+ */
 class HighArray {
     private long[] a;
     private int nElems;
@@ -13,13 +14,11 @@ class HighArray {
 
     public boolean find(long searchKey) {
         int j;
-        for(j=0; j<nElems; j++)
-            if(a[j] == searchKey)
+        for (j=0; j<nElems; j++)
+            if (a[j] == searchKey)
                 break;
-        if(j == nElems)
-            return false;
-        else
-            return true;
+        if (j == nElems) return false;
+        else return true;
     }
 
     public void insert(long value) {
@@ -29,13 +28,11 @@ class HighArray {
 
     public boolean delete(long value) {
         int j;
-        for(j=0; j<nElems; j++)
-            if(value == a[j])
-                break;
-        if(j == nElems)
-            return false;
+        for (j=0; j<nElems; j++)
+            if (value == a[j]) break;
+        if (j == nElems) return false;
         else {
-            for(int k=j; k<nElems; k++)
+            for (int k=j; k<nElems; k++)
                 a[k] = a[k+1];
             nElems--;
             return true;
@@ -43,7 +40,7 @@ class HighArray {
     }
 
     public void display() {
-        for(int j=0; j<nElems; j++)
+        for (int j=0; j<nElems; j++)
             System.out.print(a[j] + " ");
         System.out.println("");
     }
