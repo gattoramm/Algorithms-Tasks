@@ -66,7 +66,7 @@ class HighArrayApp {
         arr.display();
 
         int searchKey = 35;
-        if(arr.find(searchKey))
+        if (arr.find(searchKey))
             System.out.println("Found " + searchKey);
         else
             System.out.println("Can't find " + searchKey);
